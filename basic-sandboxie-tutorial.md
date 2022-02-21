@@ -1,13 +1,13 @@
+ This tutorial explains how to setup Sandboxie to "isolate" [Obsidian](https://obsidian.md/) automatically on startup.
+
 1. Download Sandboxie (Plus) from [here](https://sandboxie-plus.com/downloads/) (or [here](https://github.com/sandboxie-plus/Sandboxie/releases)).
 2. Install it by running the .exe file. (It should ask for admin rights.)
 3. Once open, create a "New Box";
-	- ![[images/sandboxie-tut_Pasted-image-20220219164851.png]]
+	- ![](images/sandboxie-tut_Pasted-image-20220219164851.png)
 4. Choice your sandbox name; don't worry about the other settings;
 5. Once your sandbox is created, open its settings. (Either double click or right-click and choose "Sandbox Options".)
 6. Using this picture as reference paste & save the below 'ini' into your sandbox options, and make sure to change `<your-vault>` to the location of your vault.
 	- ![](images/sandboxie-tut-Drawing_2022-02-21-excalidraw.png)
-
-(Note, I may update the ini from time to time. Consider checking back every so often.)
 
 # ini
 ```
@@ -36,6 +36,11 @@ OpenFilePath=%LocalAppData%\Obsidian
 OpenFilePath=<your-vault>
 ClosedFilePath=<BlockNetDevices>,InternetAccessDevices
 ```
+
+
+(Note, I may update the ini from time to time. Consider checking back every so often.)
+
+
 
 # *Important*
 Any applications launched from Obsidian (Firefox, File Explorer, etc) will be launched in the same sandbox. You made want to consider transferring the applications to the same sandbox, so your configurations stick.
